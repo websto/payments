@@ -13,24 +13,8 @@ With the help of [PHPStorm](https://www.jetbrains.com/phpstorm/)
 Run the command below to install via Composer
 
 ```shell
-composer require websto/payments "~1.0"
+composer require websto/payments
 ```
 
 ##Getting Started##
 
-```php
-<?php
-
-use Egulias\EmailValidator\EmailValidator;
-use Egulias\EmailValidator\Validation\RFCValidation;
-
-$validator = new EmailValidator();
-$validator->isValid("example@example.com", new RFCValidation()); //true
-```
-
-
-
-##License##
-Released under the MIT License attached with this code.
-
-# payments

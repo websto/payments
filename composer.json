@@ -1,0 +1,41 @@
+{
+    "name": "websto/payments",
+    "type":    "library",
+    "license": "MIT",
+    "description": "LiqPay, service privatbank - Оплата частями и мгновенная рассрочка, bitcoin payment",
+    "keywords": [
+        "laravel",
+        "LiqPay",
+        "bitcoin payment",
+        "privatbank payment"
+    ],
+    "authors": [
+        {
+            "name":  "websto",
+            "email": "websto8@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/websto/payments"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.*",
+        "php": ">=5.4.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Websto\\Payments\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Websto\\Payments\\PaymentServiceProvider"
+            ]
+        }
+    }
+}
