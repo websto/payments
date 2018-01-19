@@ -1,7 +1,7 @@
 {
     "name": "websto/payments",
     "type":    "library",
-    "minimum-stability": "dev",
+    "version": "1.0",
     "license": "MIT",
     "description": "LiqPay, service privatbank - Оплата частями и мгновенная рассрочка, bitcoin payment",
     "keywords": [
