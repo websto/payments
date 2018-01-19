@@ -16,3 +16,24 @@ composer require websto/payments
 
 ##Getting Started##
 
+#### Add to `websto/payments/config/paymentconf.php`
+
+#### Add to `config/app.php`
+
+Add the service provider to `providers`:
+
+```php
+'providers' => [
+    // ...
+    Websto\Payments\PaymentServiceProvider::class,
+],
+```
+
+### Example:
+``` php
+    $data = ['price'=>100];
+    $result = Payment::getInstance()->render($data);
+    
+    return view('page',['payment'=>$result]);
+```
+
