@@ -29,11 +29,4 @@ Add the service provider to `providers`:
 ],
 ```
 
-### Example:
-``` php
-    $data = ['price'=>100];
-    $result = Payment::getInstance()->render($data);
-    
-    return view('page',['payment'=>$result]);
-```
 
